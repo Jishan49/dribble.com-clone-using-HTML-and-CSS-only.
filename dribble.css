@@ -1,0 +1,388 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+#nav{
+    height: 60px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 2%;
+    cursor: pointer;
+}
+#navleft{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 35px;
+    margin-left: 25px;
+   
+}
+#navleft h5{
+    font-size: 15px;
+    font-weight: 500;
+    
+}
+#navleft img{
+    height: 30px;
+    margin-left: 100px;
+}
+#navright{
+    display: flex;
+    align-items: center;
+    gap: 35px;
+    justify-content: center;
+
+}
+#navright h4{
+    font-size: 20px;
+    transition: all ease 0.3s;
+}
+#navright #signup{
+    padding: 8px 18px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    font-weight: 600;
+}
+#navright #hire{
+    padding: 10px 20px;
+    font-size: 19px;
+    border-radius: 5px;
+    color: white;
+    background-color: black;
+    border: none;
+    font-weight: 600;
+    margin-right: 15px;
+}
+#navright #hire:hover{
+    opacity: 0.7;
+}
+#navright #signup:hover{
+    opacity: 0.7;
+}
+#navright h4:hover{
+    opacity: 0.5;
+}
+#navleft h5:hover{
+    opacity: 0.5;
+}
+#navleft img:hover{
+    background-image:url(./dribble1.jpg) ;
+    height: 30px;
+    margin-left: 100px;
+    background-position: center;
+    background-size: cover;
+}
+#center{
+    height: 60%;
+    width: 100%;
+    position: relative;
+}
+video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 8px;
+}
+#overlay{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 8px;
+    background-color: rgba(0, 0, 0, 0.62);
+}
+#info{
+    height: 100px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    display: flex;
+}
+#info #discover{
+    background-color: white;
+    color: black;
+    font-weight: 500;
+}
+#info h4{
+    color: white;
+    background-color: black;
+    padding:15px 23px;
+    border-radius: 50px;
+    font-size: 17px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all ease 0.3s;
+}
+#info h4:hover{
+    background-color: white;
+    color: black;
+}
+#overlay #info h1{
+    color: white;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    position: absolute;
+    top: 25%;
+    font-size: 40px;
+}
+
+#overlay #info p{
+    color: white;
+    align-items: center;
+    justify-content: center;
+    font-weight: 300;
+    position: absolute;
+    top: 40%;
+    font-size: 25px;
+    line-height: 30px;
+}
+
+#overlay #info input{
+
+    height: 50px;
+    width: 40%;
+    background-color: white;
+    border-radius: 50px;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 60%;
+    padding: 15px 18px;
+    border: none;
+    outline: none;
+
+}
+#bottom{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    cursor: pointer;
+}
+#bottom h4{
+    color: white;
+    border: 1px solid white;
+    border-radius: 50px;
+    font-size: 17px;
+    font-weight: 200;
+    cursor: pointer;
+    padding: 10px 10px;
+    gap: 25px;
+    margin-top: 250px;
+}
+#bottom h3{
+    color: white;
+    font-size: 17px;
+    font-weight: 200;
+    cursor: pointer;
+    margin-top: 250px;
+}
+#end{
+    width: 100%;
+    padding: 20px;
+    background-color: beige;
+}
+.elem{
+    height: 30%;
+    width: 20%;
+    overflow: hidden;
+    border-radius: 10px;
+    display: inline-block;
+    margin: 30px;
+    position: relative;
+}
+.elem img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+#cover{
+    height: 30%;
+    width: 100%;
+    background: linear-gradient(transparent,rgba(0, 0, 0, 0.5));
+    position: absolute;
+    bottom: -30%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 0px 30px;
+    transition: all ease 0.5s;
+}
+#cover h6{
+    color:white;
+    font-size: 13px;
+}
+#cover i{
+    color: rgba(231, 219, 219, 0.863);
+    background-color: #fff;
+    padding: 4px;
+    border-radius: 3px;
+    margin-left: 3px;
+}
+.elem:hover #cover{
+    bottom: 0;
+}
+
+
+
+
+
+
+#foot1{
+    height: 10%;
+    width: 100%;
+    position: relative;
+    background-color: beige;
+}
+#foot1 h1{
+    border: 1px solid none;
+    background-color: hotpink;
+    border-radius: 10px;
+    font-size: 15px;
+    height: 40px;
+    width: 160px;
+    color: white;
+    outline: none;
+    top: 27%;
+    left: 40%;
+    position:absolute;
+    padding: 10px;
+
+}
+#foot1 p{
+    position: absolute;
+    top: 35%;
+    left: 52%;
+    font-weight: 700;
+
+}
+#foot1:hover h1{
+    opacity: 0.9;
+    cursor: pointer;
+}
+#foot1:hover p{
+    opacity: 0.9;
+    cursor: pointer;
+}
+#footer{
+    height: 70%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    background-color:beige;
+}
+#leftfoot{
+    height: 100%;
+    width: 30%;
+}
+#leftfoot p{
+    align-items: center;
+    margin-top: 130px;
+    font-size: 20px;
+    margin-left: 20px;
+    font-weight: 300;
+    margin-bottom: 20px;
+
+}
+
+#leftfoot img{
+    margin-left: 20px;
+    top: 7%;
+    position: absolute;
+    width: 80px;
+    cursor: pointer;
+    border-radius: 50px;
+
+}
+
+#leftfoot i{
+    margin-left: 20px;
+    height: 10px;
+    width: 10px;
+    margin-top: 50px;
+    gap: 10px;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+
+
+#rightfoot{
+    height: 100%;
+    width: 40%;
+    background-color:beige;
+}
+
+
+#left{
+position: absolute;
+margin-left: 20px;
+top: 7%;
+}
+#middle{
+    position: absolute;
+margin-left: 180px;
+top: 7%;
+}
+
+#right{
+    position: absolute;
+margin-left: 370px;
+top: 7%;
+}
+
+#ending{
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    background-color:beige;
+    position: relative;
+
+}
+#lefty{
+    margin-left: 10px;
+    padding: 20px;
+    position: absolute;
+
+}
+#righty{
+    padding: 20px;
+    margin-right: 50px;
+}
+#righty img{
+    height: 20px;
+    width: 20px;
+    margin-top: 1px;
+    margin-left: 2px;
+    position: absolute;
+    border-radius: 50px;
+}
+#midfoot{
+    height: 100%;
+    width: 30%;
+    background-color: beige;
+    position: relative;
+}
+#midfootleft{
+    margin-left: 10px;
+    margin-top: 29px;
+}
+#midfootright{
+    position: absolute;
+    margin-top: -235px;
+    margin-left: 220px;
+
+}
